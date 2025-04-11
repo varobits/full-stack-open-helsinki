@@ -29,4 +29,5 @@ sequenceDiagram
     server-->>browser: [{content: "Hola", date: "2025-04-10T23:04:49.509Z"},…]
     deactivate server
 
+```
     
