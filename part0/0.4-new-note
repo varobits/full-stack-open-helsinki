@@ -1,4 +1,5 @@
 ```mermaid
+
 sequenceDiagram
 
     participant browser
@@ -14,12 +15,12 @@ sequenceDiagram
     server-->>browser: HTML Document 
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
     server-->>browser: CSS file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
     server-->>browser: JS file
     deactivate server
@@ -28,6 +29,4 @@ sequenceDiagram
     activate server
     server-->>browser: [{content: "Hola", date: "2025-04-10T23:04:49.509Z"},…]
     deactivate server
-
-```
     
